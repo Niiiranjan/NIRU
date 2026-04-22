@@ -1,0 +1,42 @@
+num=20
+print(type(num))#printing the type of num
+num1=20.5
+print(type(num1))#printing the type of num1
+ 
+def my_function():
+    print("Hello from a function")#defining a function that prints a message
+my_function()#calling the function to execute its code
+
+class MyClass:
+    x=5
+p1=MyClass()#creating an object of the class MyClass    
+print(p1.x)#accessing the value of x using the object p1
+
+#base class
+class Vehicle:
+    def vehicle_info(self):
+        print("inside vehicle class")
+#child class
+class Car(Vehicle):
+    def car_info(self):
+        print("inside car class")
+
+#create object of car 
+c1=Car()#creating an object of the child class Car
+c1.vehicle_info()#calling the method of the base class using the child class object 
+c1.car_info()#calling the method of the child class using the child class object
+#class
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def greet(self):
+        return f"Hello, my name is {self.name} and I am {self.age} years old."
+    def __repr__(self):
+        return f"Person(name='{self.name!r}', age={self.age!r})"#defining a method to return a string representation of the object
+p1=Person("Alice",30)#creating an object of the Person class with name "Alice" and age 30
+p2=Person("Bob",25)#creating another object of the Person class with name "Bob" and age 25
+print(p1)
+print(p1.greet())#calling the greet method of the object p1 to print the person's information
+print(p2.name,p2.age)#accessing the name and age attributes of the object p2 and printing them
+print(p2._repr_())

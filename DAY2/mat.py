@@ -16,3 +16,24 @@ plt.grid()
 #display the graph
 plt.show()
 
+Students=["Arun","Bina","Chetan","Dviya","Esha"]
+Marks=[75,85,90,70,95]
+plt.bar(Students, Marks)
+plt.xlabel("Students")
+plt.ylabel("Marks")
+plt.title("Student Marks")
+plt.show()
+
+Students=["Arun","Bina","Chetan","Dviya","Esha"]
+Marks=[75,85,90,70,95]
+plt.plot(Students, Marks)
+plt.xlabel("Students")
+plt.ylabel("Marks")
+plt.title("Student Marks")
+plt.show()
+
+Students=["NIRU","DES","SAM","DITTU"]
+Marks=[25,20,15,30]
+plt.pie(Marks,labels=Students)
+plt.title("Student Marks Distribution")
+plt.show()

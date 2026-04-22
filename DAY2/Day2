@@ -34,9 +34,9 @@ class Person:
         return f"Hello, my name is {self.name} and I am {self.age} years old."
     def __repr__(self):
         return f"Person(name='{self.name!r}', age={self.age!r})"#defining a method to return a string representation of the object
+   
 p1=Person("Alice",30)#creating an object of the Person class with name "Alice" and age 30
 p2=Person("Bob",25)#creating another object of the Person class with name "Bob" and age 25
 print(p1)
 print(p1.greet())#calling the greet method of the object p1 to print the person's information
-print(p2.name,p2.age)#accessing the name and age attributes of the object p2 and printing them
-print(p2._repr_())
+print(p2.name,p2.age)#accessing the name and age attributes of the object p2 and printing them 

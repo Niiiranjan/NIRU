@@ -30,3 +30,5 @@ class person:
 p1=person("des",20)
 print(p1.name)
 print(p1._person__age)#accessing the age attribute using name mangling
+
+

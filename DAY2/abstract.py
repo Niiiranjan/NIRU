@@ -20,3 +20,4 @@ i.mileage()
 p=pajero()
 p.mileage()
 
+ 
